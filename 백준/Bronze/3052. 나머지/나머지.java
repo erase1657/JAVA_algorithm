@@ -24,8 +24,11 @@ public class Main{
         }
         //배열의 중복 값 제거
         remainder = Arrays.stream(remainder).distinct().toArray();
-        
-        System.out.println(remainder.length);
+
+        bw.write(String.valueOf(remainder.length));
+
+        bw.flush();
+        bw.close();
         
 
         
